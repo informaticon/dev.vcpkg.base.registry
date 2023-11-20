@@ -4,16 +4,30 @@
   "description": "Framework to create PBNI Extensions",
   "homepage": "https://github.com/informaticon/lib.cpp.base.pbni-framework",
   "dependencies": [
+    "boost-multiprecision",
     "boost-stacktrace",
     "boost-utility",
-    "boost-multiprecision",
-
-    { "name" : "vcpkg-cmake", "host" : true },
-    { "name" : "vcpkg-cmake-config", "host" : true }
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
   ],
   "overrides": [
-    {"name": "boost-stacktrace", "version": "1.83.0"},
-    {"name": "boost-utility", "version": "1.83.0"},
-    {"name": "boost-multiprecision", "version": "1.83.0"}
-  ],
+    {
+      "name": "boost-stacktrace",
+      "version": "1.83.0"
+    },
+    {
+      "name": "boost-utility",
+      "version": "1.83.0"
+    },
+    {
+      "name": "boost-multiprecision",
+      "version": "1.83.0"
+    }
+  ]
 }
