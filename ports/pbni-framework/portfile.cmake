@@ -6,14 +6,18 @@ execute_process(
     ret
 )
 
+
+if(ret EQUAL "0")
+  set(URL "git@github.com:informaticon/lib.cpp.base.pbni-framework")
+else()
+  set(URL "https://github.com/informaticon/lib.cpp.base.pbni-framework")
+endif()
+
 vcpkg_from_git(
   OUT_SOURCE_PATH SOURCE_PATH
-  URL "$<IF:$<ret:0>,
-    git@github.com:informaticon/lib.cpp.base.pbni-framework,
-    https://github.com/informaticon/lib.cpp.base.pbni-framework
-  >"
-  REF 25352cea6430978e9431acdcb7a973ec25589d44
-  HEAD_REF vcpkg-testing
+  URL ${URL}
+  REF "25352cea6430978e9431acdcb7a973ec25589d44"
+  HEAD_REF "vcpkg-testing"
 )
 
 
@@ -32,5 +36,4 @@ file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 # 	"PLACEHOLDER FILE\n"
 # )
 
-# file(INSTALL "${SOURCE_PATH}/LICENSE" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright)
 configure_file("${CMAKE_CURRENT_LIST_DIR}/usage" "${CURRENT_PACKAGES_DIR}/share/${PORT}/usage" COPYONLY)
