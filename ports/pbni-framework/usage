@@ -1,4 +1,4 @@
-vcpkg-sample-library provides CMake targets:
+pbni-framework provides CMake targets:
 
-	find_package(pbni-framework REQUIRED)
+	find_package(pbni-framework CONFIG REQUIRED)
 	target_link_libraries(main PRIVATE inf::pbni-framework)
