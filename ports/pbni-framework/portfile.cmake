@@ -16,7 +16,7 @@ endif()
 vcpkg_from_git(
   OUT_SOURCE_PATH SOURCE_PATH
   URL ${URL}
-  REF "957b990ab887875ca9b38e9573db9240875744d7"
+  REF "3e1e3c61ff14ea230eb36da7ed67692a52776aea"
   HEAD_REF "main"
 )
 
@@ -33,6 +33,7 @@ vcpkg_cmake_config_fixup()
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 
 # file(WRITE "${CURRENT_PACKAGES_DIR}/share/${PORT}/copyright"
+# TODO
 # 	"PLACEHOLDER FILE\n"
 # )
 
