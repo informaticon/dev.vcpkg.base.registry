@@ -23,7 +23,8 @@ endif()
 ## Adding a version
 1. Change `REF` in `./ports/{portname}/portfile.cmake`
 2. Update `version` in `./ports/{portname}/vcpkg.json`
-3. Run in root directory:
+3. Commit
+4. Run in root directory:
 
 ```ps1
 vcpkg --x-builtin-ports-root=./ports --x-builtin-registry-versions-dir=./versions x-add-version {portname} --verbose
