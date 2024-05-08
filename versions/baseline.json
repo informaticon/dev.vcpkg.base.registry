@@ -1,7 +1,7 @@
 {
   "default": {
     "pbni-framework": {
-      "baseline": "0.0.7",
+      "baseline": "0.0.6",
       "port-version": 0
     }
   }
