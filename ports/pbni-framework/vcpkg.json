@@ -1,6 +1,6 @@
 {
   "name": "pbni-framework",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Framework to create PBNI Extensions",
   "homepage": "https://github.com/informaticon/lib.cpp.base.pbni-framework",
   "dependencies": [
@@ -19,15 +19,15 @@
   "overrides": [
     {
       "name": "boost-stacktrace",
-      "version": "1.83.0"
+      "version": "1.85.0"
     },
     {
       "name": "boost-utility",
-      "version": "1.83.0"
+      "version": "1.85.0"
     },
     {
       "name": "boost-multiprecision",
-      "version": "1.83.0"
+      "version": "1.85.0"
     }
   ]
 }
