@@ -16,7 +16,7 @@ endif()
 vcpkg_from_git(
   OUT_SOURCE_PATH SOURCE_PATH
   URL ${URL}
-  REF "4ecb236ed028ed978dfeeb5795a2da325210a098"
+  REF "2ec56314875390b0bb375704da5d598f329a00d7"
   HEAD_REF "main"
 )
 
@@ -32,9 +32,6 @@ vcpkg_cmake_config_fixup()
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 
-# file(WRITE "${CURRENT_PACKAGES_DIR}/share/${PORT}/copyright"
-# TODO
-# 	"PLACEHOLDER FILE\n"
-# )
+vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE.md")
 
 configure_file("${CMAKE_CURRENT_LIST_DIR}/usage" "${CURRENT_PACKAGES_DIR}/share/${PORT}/usage" COPYONLY)
