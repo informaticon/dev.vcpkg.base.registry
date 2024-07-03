@@ -16,7 +16,7 @@ endif()
 vcpkg_from_git(
   OUT_SOURCE_PATH SOURCE_PATH
   URL ${URL}
-  REF "2512df10e5ab2f37664fee75c74f8c2e01bb3041"
+  REF "216155a587b5dedae6a52e612c4926de2a6c781e"
   HEAD_REF "vcpkg-test"
 )
 
@@ -27,8 +27,7 @@ vcpkg_cmake_configure(
 vcpkg_cmake_install()
 vcpkg_cmake_config_fixup(CONFIG_PATH "lib/cmake/pbni-framework")
 
-# file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug")
-# file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/lib")
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 
 vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE.md")
 
