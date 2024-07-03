@@ -16,21 +16,18 @@ endif()
 vcpkg_from_git(
   OUT_SOURCE_PATH SOURCE_PATH
   URL ${URL}
-  REF "5ba210771fc4562c26dfcf54526dabecd2480ee2"
+  REF "48fd9d91487885f38b604e81cb931f4593ad84ef"
   HEAD_REF "main"
 )
 
 
 vcpkg_cmake_configure(
   SOURCE_PATH "${SOURCE_PATH}"
-  OPTIONS
-    -DINF_VCPKG_INSTALL=ON
 )
 vcpkg_cmake_install()
-
 vcpkg_cmake_config_fixup()
 
-file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
+# file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 
 vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE.md")
 
