@@ -23,6 +23,8 @@ vcpkg_from_git(
 
 vcpkg_cmake_configure(
   SOURCE_PATH "${SOURCE_PATH}"
+  OPTIONS
+    -DINSTALL_CMAKEDIR="share/pbni-framework"
 )
 vcpkg_cmake_install()
 vcpkg_cmake_config_fixup()
