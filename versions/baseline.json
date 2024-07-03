@@ -1,8 +1,8 @@
 {
   "default": {
     "pbni-framework": {
-      "baseline": "0.0.10-clean-cmake",
-      "port-version": 16
+      "baseline": "0.0.11",
+      "port-version": 0
     }
   }
 }
