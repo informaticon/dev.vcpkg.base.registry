@@ -16,8 +16,8 @@ endif()
 vcpkg_from_git(
   OUT_SOURCE_PATH SOURCE_PATH
   URL ${URL}
-  REF "216155a587b5dedae6a52e612c4926de2a6c781e"
-  HEAD_REF "vcpkg-test"
+  REF "c7e79775d30fc13a8ed7e7e35ccffbc80a1f9b5a"
+  HEAD_REF "main"
 )
 
 
