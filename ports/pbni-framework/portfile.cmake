@@ -25,7 +25,7 @@ vcpkg_cmake_configure(
   SOURCE_PATH "${SOURCE_PATH}"
 )
 vcpkg_cmake_install()
-vcpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/fizz)
+vcpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/pbni-framework)
 vcpkg_copy_pdbs()
 
 # file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
