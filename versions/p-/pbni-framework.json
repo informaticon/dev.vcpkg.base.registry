@@ -1,6 +1,11 @@
 {
   "versions": [
     {
+      "git-tree": "5654941b0aff9b69e6a1f3f83cab6ede5ee1b47c",
+      "version": "0.0.10-clean-cmake",
+      "port-version": 1
+    },
+    {
       "git-tree": "a872f76820949901d8986f9376ea9db73b67e2d0",
       "version": "0.0.10-clean-cmake",
       "port-version": 0
