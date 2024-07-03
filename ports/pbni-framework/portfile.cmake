@@ -23,11 +23,9 @@ vcpkg_from_git(
 
 vcpkg_cmake_configure(
   SOURCE_PATH "${SOURCE_PATH}"
-  OPTIONS
-    -DINSTALL_CMAKEDIR="share/pbni-framework"
 )
 vcpkg_cmake_install()
-vcpkg_cmake_config_fixup()
+vcpkg_cmake_config_fixup(CONFIG_PATH "lib/cmake/pbni-framework")
 
 # file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug")
 # file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/lib")
