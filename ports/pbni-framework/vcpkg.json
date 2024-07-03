@@ -1,7 +1,7 @@
 {
   "name": "pbni-framework",
   "version": "0.0.10-clean-cmake",
-  "port-version": 7,
+  "port-version": 8,
   "description": "Framework to create PBNI Extensions",
   "homepage": "https://github.com/informaticon/lib.cpp.base.pbni-framework",
   "dependencies": [
