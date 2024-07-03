@@ -16,7 +16,7 @@ endif()
 vcpkg_from_git(
   OUT_SOURCE_PATH SOURCE_PATH
   URL ${URL}
-  REF "542217361a016e2feee5a0936375df69755cf3e9"
+  REF "01cd052779976d8397f8a182fd69330d8baeedae"
   HEAD_REF "main"
 )
 
@@ -24,11 +24,10 @@ vcpkg_from_git(
 vcpkg_cmake_configure(
   SOURCE_PATH "${SOURCE_PATH}"
   OPTIONS
-    -DINSTALL_CMAKEDIR="lib/share/pbni-framework"
+    -DINSTALL_CMAKEDIR="${CURRENT_PACKAGES_DIR}/share/pbni-framework"
 )
 vcpkg_cmake_install()
 vcpkg_cmake_config_fixup()
-vcpkg_copy_pdbs()
 
 # file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug")
 # file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/lib")
